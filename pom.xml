@@ -58,6 +58,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-resources-plugin</artifactId>
+			<version>3.3.1</version>
+			<type>maven-plugin</type>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -73,6 +79,11 @@
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -110,6 +121,8 @@
 						<database>
 							<name>org.jooq.meta.mysql.MySQLDatabase</name>
 							<includes>.*</includes>
+							<!--	Database Name / Schema Name	-->
+							<inputSchema>college</inputSchema>
 						</database>
 						<target>
 							<packageName>com.example.poc.jooq</packageName>

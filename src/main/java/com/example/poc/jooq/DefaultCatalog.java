@@ -4,8 +4,6 @@
 package com.example.poc.jooq;
 
 
-import com.example.poc.jooq.college.College;
-
 import java.util.Arrays;
 import java.util.List;
 

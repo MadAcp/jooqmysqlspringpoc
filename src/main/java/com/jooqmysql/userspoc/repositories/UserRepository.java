@@ -6,7 +6,7 @@ import org.jooq.DSLContext;
 
 import java.util.List;
 
-import static com.example.poc.jooq.college.tables.Users.USERS;
+import static com.example.poc.jooq.tables.Users.USERS;
 
 @Repository
 public class UserRepository {
