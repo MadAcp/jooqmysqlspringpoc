@@ -38,7 +38,7 @@ Edit User
 PUT - localhost:8080/api/users/[id]?name=[name]&email=[email]
 
 End of execution, Ignore rest
-
+<!--
 # Files
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
@@ -177,3 +177,4 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
+ -->
